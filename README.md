@@ -1,1 +1,1 @@
-# student-loan-payment-length
+# Student Loan Payment Length Calculator
