@@ -41,7 +41,7 @@
               <label for="payment-increment">Increments</label>
               <input id="payment-increment" v-model.number="paymentIncrement" type="number" class="form-control">
             </div>
-            <button v-on:click="calculatePayments" type="button" class="btn btn-info">Calculate</button>
+            <button v-on:click="calculatePayments" type="button" class="btn btn-info">Update</button>
           </form>
         </div>
 
@@ -58,7 +58,7 @@
                 <thead>
                   <tr>
                     <th scope="col">Monthly Payment</th>
-                    <th scope="col">Number of Payments</th>
+                    <th scope="col">Number of Months</th>
                     <th scope="col">Final Payment Amount</th>
                   </tr>
                 </thead>

@@ -26,7 +26,7 @@ var app = new Vue({
           data: {
             labels: chartLabels,
             datasets: [{
-              label: '# of Payments',
+              label: '# of Months',
               data: chartData,
               backgroundColor: '#17a2b8',
             }],
@@ -34,7 +34,7 @@ var app = new Vue({
           options: {
             title: {
               display: true,
-              text: 'Number of Payments vs. Monthly Amount',
+              text: 'Monthly Payment Amount vs. Number of Months',
             },
             legend: { display: false },
             scales: {
