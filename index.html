@@ -59,14 +59,14 @@
                 <thead>
                   <tr>
                     <th scope="col">Monthly Payment</th>
-                    <th scope="col">Number of Months</th>
+                    <th scope="col">Payoff Length</th>
                     <th scope="col">Final Payment Amount</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr v-for="payment in paymentsData">
                     <th scope="row">${{ payment.monthlyPayment }}</th>
-                    <td>{{ payment.numberOfPayments }}</td>
+                    <td>{{ payment.payoffYears }} years {{ payment.payoffMonths }} months</td>
                     <td>${{ payment.finalPayment }}</td>
                   </tr>
                 </tbody>

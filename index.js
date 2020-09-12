@@ -82,9 +82,14 @@ var app = new Vue({
           loanBalance -= paymentAmount;
         }
 
+        const payoffYears = Math.floor(paymentCount / 12);
+        const payoffMonths = paymentCount % 12;
+
         return {
           monthlyPayment: paymentAmount,
           numberOfPayments: paymentCount,
+          payoffYears: payoffYears,
+          payoffMonths: payoffMonths,
           finalPayment: _.round(finalPayment, 2)};
       }.bind(this));
     },
